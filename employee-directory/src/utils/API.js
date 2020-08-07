@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASEURL = 'https://randomuser.me/api/?inc=gender,name,nat,dob,picture';
+const BASEURL = 'https://randomuser.me/api/?results=40';
 
 export default {
     search: function() {
