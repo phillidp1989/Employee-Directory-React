@@ -10,6 +10,7 @@ function Container() {
   const [allEmployees, setAllEmployees] = useState([]);
   const [view, setView] = useState("all");
   const [visibleEmployees, setVisibleEmployees] = useState([]);
+  const [alpha, setAlpha] = useState(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]);
 
   //   useEffect hook used to call random user api upon launch of the application
   const generateEmployees = async () => {
@@ -43,13 +44,14 @@ function Container() {
 
   const handleLetterBtnSubmit = (e) => {
     const letter = e.target.name;
+    console.log(letter);    
     handleFilter(letter);
   };
 
   const handleFilter = (letter) => {
     if (letter === "all") {
       setView("all");
-      setVisibleEmployees(allEmployees);
+      setVisibleEmployees(allEmployees);      
     } else {
       const filteredEmployees = allEmployees.filter((employee) => {
         return employee.lastName.charAt(0) === letter;
@@ -80,8 +82,8 @@ function Container() {
     <div>
       <LetterContainer
         icon={<i className="far fa-user"></i>}
-        alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        all={view}
+        alpha={alpha}
+        all="all"
         handleLetterBtnSubmit={handleLetterBtnSubmit}
       />
       <Sort handleSort={handleSort} />
