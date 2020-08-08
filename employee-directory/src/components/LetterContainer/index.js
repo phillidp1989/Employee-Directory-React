@@ -1,9 +1,22 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
+import Letter from '../Letter/index';
 
-function LetterContainer() {
+function LetterContainer(props) {
     return (
-        <div>
-            Letter container test
+        <div className="letter-container">                  
+            <Letter 
+            letter={props.all}            
+            key={props.all}            
+            handleLetterBtnSubmit={props.handleLetterBtnSubmit}
+            />
+            {props.alpha.map(letter => (
+                <Letter 
+                letter={letter}
+                key={letter}
+                handleLetterBtnSubmit={props.handleLetterBtnSubmit}
+                />
+            ))}
         </div>
     )
 }
