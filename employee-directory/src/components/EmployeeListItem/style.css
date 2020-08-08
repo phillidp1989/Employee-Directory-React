@@ -1,0 +1,13 @@
+.card {
+    margin: 10px 20px;
+}
+
+.card .card-image {
+    background-color: darkred;    
+}
+
+.card .card-image img {
+    width: 40% !important;
+    height: auto;
+    margin: 10px auto;
+}
