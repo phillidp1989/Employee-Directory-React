@@ -74,11 +74,7 @@ function Container() {
       setVisibleEmployees(sortedLastName);
       console.log(sortedLastName);
     }
-  };
-
-  const logFunction = () => {
-    console.log(allEmployees);
-  }
+  };  
 
   return (
     <div>
@@ -89,7 +85,7 @@ function Container() {
         handleLetterBtnSubmit={handleLetterBtnSubmit}
       />
       <Sort handleSort={handleSort} />
-      <div className = "d-flex flex-wrap justify-content-center"> 
+      <div className = "d-flex flex-wrap justify-content-center row"> 
       {visibleEmployees.map(employee => (
         <EmployeeListItem         
         id = {visibleEmployees.indexOf(employee)}
