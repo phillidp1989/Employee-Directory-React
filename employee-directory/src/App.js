@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/index';
-import Container from './components/Container/index'
+import Container from './components/Container/index';
+import './style.css';
 
 function App() {
   return (
