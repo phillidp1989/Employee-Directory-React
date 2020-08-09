@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './style.css';
 
 function Letter({ letter, handleLetterBtnSubmit }) {
     return (
         <div name={letter}>
-            <a className="btn-floating btn-large waves-effect waves-light red" name={letter} onClick={handleLetterBtnSubmit}>{letter}</a>
+            <a className="btn-floating btn waves-effect waves-light" name={letter} onClick={handleLetterBtnSubmit}>{letter}</a>
         </div>
     )
 }
