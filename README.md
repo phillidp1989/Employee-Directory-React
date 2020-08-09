@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee-Directory-React
 
-## Available Scripts
+## Table of Contents:
 
-In the project directory, you can run:
+[Description](#description)
 
-### `npm start`
+[Visuals](#visuals)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Installation](#installation)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Usage](#usage)
 
-### `npm test`
+[License](#license)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Contributing](#contributing)
 
-### `npm run build`
+[Testing](#testing)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Languages](#languages)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[Author](#author)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Description:
+The application is an employee directory utilising React components to create the UI. When the application first loads, all employee data is rendered. The user then has the ability to filter by surname, search for a specific employee and to sort by either first or last name. 
 
-### `npm run eject`
+## Visuals:
+![screenshot](https://github.com/phillidp1989/Employee-Directory-React/blob/master/public/demo-gif.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Installation:
+The application can be viewed at https://salty-escarpment-58993.herokuapp.com/. To run the development app, users can clone the folder onto their own computer by forking the repo in Github. All npm packages can be installed by running npm install in the terminal of the root directory. The development server can then be run by typing the command npm start.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage:
+The user can view all employee information when the appication loads. To view further information about each employee, the user must click on the specific card which will reveal more data. The list of employees can be filtered by the first letter of the surname. This feature can be accessed by clicking the first collapsible at the top of the page, which expands to show a button for each letter of the alphabet. When a letter is clicked, the list of employees will re-render showing only employees with a surname beginning with that letter. The second collapsible will display a search bar with auto complete functionality. When the user begins to type an employee's name, they will be presented with a list of suggested options and the list will dynamically update based on user input. Finally, radio buttons allow the user to sort the results by first or last name.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License:
+<img src="https://img.shields.io/github/license/phillidp1989/Employee-Directory-React?logoColor=%23C2CAE8">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing:
+No contributions
 
-## Learn More
+## Testing:
+No testing framework
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Languages:
+<img src="https://img.shields.io/github/languages/top/phillidp1989/Employee-Directory-React">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author:
+Name: Dan Phillips
 
-### Code Splitting
+Github Username: phillidp1989
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Github Email Address: d.p.phillips@bham.ac.uk
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<img src="https://avatars1.githubusercontent.com/u/61989740?v=4">
