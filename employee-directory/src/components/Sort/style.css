@@ -1,0 +1,9 @@
+.sort-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    width: 50%;
+    
+}
