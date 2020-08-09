@@ -3,6 +3,7 @@ import API from "../../utils/API";
 import LetterContainer from "../LetterContainer/index";
 import Sort from "../Sort/index";
 import EmployeeListItem from "../EmployeeListItem/index";
+import M from "materialize-css";
 
 // Functional component used so that hooks can be utilised
 function Container() {
@@ -30,21 +31,20 @@ function Container() {
         formattedEmployee["job"] = profession[Math.floor(Math.random() * 4)];
         return formattedEmployee;
       });
-
       setAllEmployees(formattedEmployeeData);
-      setVisibleEmployees(formattedEmployeeData);
+      setVisibleEmployees(formattedEmployeeData);      
     } catch (err) {
       console.error("ERROR - Container index.js - generateEmployees", err);
     }
   };
 
   useEffect(() => {
-    generateEmployees();
+    generateEmployees();    
+    M.AutoInit();  
   }, []);
 
   const handleLetterBtnSubmit = (e) => {
-    const letter = e.target.name;
-    console.log(letter);    
+    const letter = e.target.name;        
     handleFilter(letter);
   };
 
@@ -57,24 +57,22 @@ function Container() {
         return employee.lastName.charAt(0) === letter;
       });
       setView(letter);
-      setVisibleEmployees(filteredEmployees);
+      setVisibleEmployees(filteredEmployees);      
     }
   };
 
-  const handleSort = (e) => {
+  const handleSort = (e) => {    
     const sort = e.target.value;
-    if (sort === "First Name") {
-      const sortedFirstName = allEmployees.sort((a, b) =>
+    if (sort === "2") {
+      const sortedFirstName = [...visibleEmployees].sort((a, b) =>
         a.firstName.localeCompare(b.firstName)
-      );
-      console.log(sortedFirstName);
-      setVisibleEmployees(sortedFirstName);
-    } else if (sort === "Last Name") {
-      const sortedLastName = allEmployees.sort((a, b) =>
+      );      
+      setVisibleEmployees(sortedFirstName);      
+    } else if (sort === "1") {
+      const sortedLastName = [...visibleEmployees].sort((a, b) =>
         a.lastName.localeCompare(b.lastName)
       );
-      setVisibleEmployees(sortedLastName);
-      console.log(sortedLastName);
+      setVisibleEmployees(sortedLastName);            
     }
   };  
 
