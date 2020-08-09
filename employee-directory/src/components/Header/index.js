@@ -4,8 +4,9 @@ import './style.css';
 function Header() {
     return (
         <div className='header'>
-            <h1><i className="fas fa-sitemap"></i>  Employee Directory  <i className="fas fa-sitemap"></i></h1>
-            <h4>Your Ultimate Employee Lookup</h4>
+            <h2 className="title">Employee Directory</h2>
+            <h2 className="logo"><i className="fas fa-sitemap"></i></h2>
+            <h5>Your Ultimate Employee Lookup</h5>
         </div>        
     );
 }
