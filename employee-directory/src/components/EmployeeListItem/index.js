@@ -3,7 +3,7 @@ import './style.css';
 
 function EmployeeListItem(props) {
     return (
-        <div className="col s12 m6 l3">
+        <div className="col s12 m6 l4">
             <div className="card">
                 <div className="card-image waves-effect waves-block waves-light">
                     <img className="activator" src={props.image} alt="profilepic"></img>
